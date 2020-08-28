@@ -525,6 +525,7 @@ font-size: 1.2vw;
   margin-bottom: 25px;
   opacity: 0.6;
   transition: all 0.1s ease 0s;
+  cursor: pointer;
 }
 
 #contact #contact-body #contact-info .contact-item input[type="text"]:hover {
@@ -585,6 +586,7 @@ font-size: 1.2vw;
   padding: 10px 14px;
   margin-left: 5.35%;
   transition: all 0.3s ease 0s;
+
 }
 
 #contact #contact-body #contact-submit input[type="submit"]:hover {
