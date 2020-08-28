@@ -451,6 +451,149 @@ font-size: 1.2vw;
 
 /* End Project Section */
 
+/* Contact Me Section */
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  background: #14171d;
+  padding: 5% 15%;
+  font-family: sans-serif;
+  margin-top: -5.6%;
+}
+
+#contact-header #topic {
+  text-align: center;
+  font-size: 2em;
+  padding: 0% 2% 2% 2%;
+  line-height: 1.6em;
+  color: #fffafa;
+}
+
+#contact-header hr {
+  background: #56c9aa;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 1px solid #56c9aa;
+  margin-top: -2%;
+  margin-bottom: 2%;
+  width: 100%;
+  padding-left: 20%;
+  padding-right: 20%;
+  transition: all 0.3s ease 0s;
+  border: #2b6455;
+
+}
+
+#contact-header hr:hover {
+  background: #2b6455;
+  border: #2b6455;
+
+}
+
+#contact #contact-body {
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+}
+
+#contact #contact-body #contact-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0% 3%;
+}
+
+#contact #contact-body #contact-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact ::placeholder {
+  color: white;
+}
+
+#contact #contact-body #contact-info .contact-item input[type="text"] {
+  background: #14171d;
+  border: 2px solid #56c9aa;
+  color: white;
+  width: 30vw;
+  padding: 10px;
+  padding-left: 14px;
+  margin-bottom: 25px;
+  opacity: 0.6;
+  transition: all 0.1s ease 0s;
+}
+
+#contact #contact-body #contact-info .contact-item input[type="text"]:hover {
+  opacity: 1;
+}
+
+#contact #contact-body #contact-info .contact-item select {
+  background: #14171d;
+  border: 2px solid #56c9aa;
+  color: white;
+  width: 30vw;
+  padding: 10px;
+  opacity: 0.6;
+  transition: all 0.1s ease 0s;
+  
+}
+
+#contact #contact-body #contact-info .contact-item select:hover {
+  opacity: 1;
+}
+
+#contact #contact-body #contact-subject input[type="text"] {
+  background: #14171d;
+  border: 2px solid #56c9aa;
+  color: white;
+  width: 61.8vw;
+  padding: 10px;
+  padding-left: 14px;
+  opacity: 0.6;
+  transition: all 0.1s ease 0s;
+}
+
+#contact #contact-body #contact-subject input[type="text"]:hover {
+  opacity: 1;
+}
+
+#contact #contact-body #contact-desc input[type="text"] {
+  background: #14171d;
+  border: 2px solid #56c9aa;
+  color: white;
+  opacity: 0.6;
+  width: 61.8vw;
+  padding: 25px 10px;
+  padding-left: 14px;
+  margin: 25px 0px;
+  transition: all 0.1s ease 0s;
+}
+
+#contact #contact-body #contact-desc input[type="text"]:hover {
+  opacity: 1;
+}
+
+#contact #contact-body #contact-submit input[type="submit"] {
+  background: #14171d;
+  border: 2px solid #56c9aa;
+  color: #56c9aa;
+  margin-left: 3.1vw;
+  padding: 10px 14px;
+  margin-left: 5.35%;
+  transition: all 0.3s ease 0s;
+}
+
+#contact #contact-body #contact-submit input[type="submit"]:hover {
+  background: #2b6455;
+  color: #ffffe3;
+  border: 2px solid white;
+}
+
+/* End Contact Section */
 
 
 
