@@ -1,3 +1,5 @@
+/* Code for the whole website */
+
 :root {
   --main-text-color: #56c9aa;
   --main-bg-color: #14171d;
@@ -16,6 +18,7 @@ html {
 
 /* Navigation Bar */
 
+/* Logo in the navBar */
 #logo {
   display: inline-block;
   text-decoration: none;
@@ -28,6 +31,7 @@ html {
   color: white;
 }
 
+/* navBar and its positioning */
 #nav-bar {
   display: flex;
   justify-content: space-between;
@@ -43,6 +47,7 @@ html {
   background: rgb(20, 23, 29);
 }
 
+/* links in the navBar */
 #nav-objects {
   display: flex;
   list-style: none;
@@ -70,6 +75,7 @@ html {
   overflow: hidden; 
 }
 
+/* underline transition for the middle links */
 .nav-object:before {
   content: "";
   position: absolute;
@@ -92,6 +98,7 @@ html {
   left: 0;
 }
 
+/* properties for the contact button */
 #contact-button {
   border-radius: 100px;
   padding: 6px 20px;
@@ -113,6 +120,7 @@ html {
 
 /* Hero Section */
 
+/* hero section and its positioning */
 #hero {
   margin-top: 0px;
   padding: 247px 10%;
@@ -120,10 +128,12 @@ html {
   font-family: sans-serif;
 }
 
+/* Parsa phrase and its positioning */
 #hero #parsa {
   margin-bottom: 20px;
 }
 
+/* link to my resume */
 #hero a {
   border: 2px solid #56c9aa;
   padding: 10px;
@@ -138,6 +148,7 @@ html {
   border: 2px solid white;
 }
 
+/* the animation for the words in the hero section */
 #hero span {
   color: rgb(86,201,170);
   font-size: 1.5em;
@@ -217,6 +228,7 @@ html {
 
 /* About me Section */
 
+/* about me section and its positioning */
 #about-me {
   display: flex;
   flex-direction: column;
@@ -226,6 +238,7 @@ html {
   margin-top: -5.6%;
 }
 
+/* the header of the about me section */
 #about-me #topic {
   text-align: center;
   font-size: 2em;
@@ -234,6 +247,7 @@ html {
   color: #fffafa;
 }
 
+/* the line under the header */
 #about-me hr {
   background: #56c9aa;
   padding-top: 5px;
@@ -255,6 +269,7 @@ html {
 
 }
 
+/* text describing me */
 #about-me p {
   text-align: center;
   word-spacing: 0.2em;
@@ -266,6 +281,7 @@ html {
   
 }
 
+/* the social media links and thier positioning */
 #socialmedia-links {
   display: flex;
   justify-content: space-between;
@@ -276,6 +292,7 @@ html {
 
 /* Services Section */
 
+/* services section and its positioning */
 #services {
 display: flex;
 flex-direction: column;
@@ -286,6 +303,7 @@ margin-top: -5.6%;
 padding-top: 247px;
 }
 
+/* the header of the services section */
 #services-header #topic {
 text-align: center;
 font-size: 2em;
@@ -294,6 +312,7 @@ line-height: 1.6em;
 color: #fffafa;
 }
 
+/* the line under the services header */
 #services-header hr {
 background: #56c9aa;
 padding-top: 5px;
@@ -306,9 +325,9 @@ padding-left: 20%;
 padding-right: 20%;
 transition: all 0.3s ease 0s;
 border: #2b6455;
-
 }
 
+/* all 4 of the services container */
 #services-body {
 display: flex;
 flex-direction: row;
@@ -318,6 +337,7 @@ color: white;
 margin-bottom: -10%;
 }
 
+/* each one of the services */
 .services-object {
 display: flex;
 flex-direction: row;
@@ -326,39 +346,40 @@ margin-bottom: 5%;
 justify-content: space-between;
 }
 
+/* the description of each service */
 #services-body .services-object .services-desc {
 width: 150%;
-
 }
 
+/* the icon of each service */
 #services-body .services-object .services-icon {
 margin-right: 11%;
 margin-left: -5%;
 }
 
+/* the header of the each service description */
 #services-body .services-object .services-desc h1 {
 text-transform: uppercase;
 font-size: 1.2em;
 width: max-content;
 }
 
+/* the text explaining each service */
 #services-body .services-object .services-desc p {
 line-height: 3.88vh;
 padding: 0% 0%;
 display: flex;
 flex-direction: column;
-
 text-align: left;
 order: 2;
 font-size: 1.2vw;
 }
 
-
-
 /* End Services Section */
 
 /* Project Section*/
 
+/* the project section and its positioning */
 #projects {
   color: white;
   background: #14171d;
@@ -369,11 +390,13 @@ font-size: 1.2vw;
   
 }
 
+/* the header of the project section */
 #project-topic {
 font-size: 2em;
 text-align: center;
 }
 
+/* the line under the header of the project section */
 #projects hr {
 background: #56c9aa;
 padding-top: 5px;
@@ -386,25 +409,23 @@ padding-left: 20%;
 padding-right: 20%;
 transition: all 0.3s ease 0s;
 border: #2b6455;
-
 }
 
 #projects hr:hover {
 background: #2b6455;
 border: #2b6455;
-
 }
 
+/* all of the 4 projects container */
 .project {
 background: #14171d;
 text-align: center;
 display: flex;
 flex-wrap: wrap;
-
 }
 
+/* each one of the projects */
 .project .project-container {
-/* border: 2px solid #56c9aa; */
 background: #14171d;
 display: flex;
 flex-direction: row;
@@ -413,30 +434,26 @@ align-items: center;
 margin-bottom: 5%;
 width: 100%;
 height: 30vh;
-
 }
 
+/* the icon of each project section */
 .project .project-container .project-image {
 display: flex;
 flex-direction: row;
 justify-content: stretch;
 align-items: center;
-/* border: 2px solid #56c9aa; */
-
 order: 1;
-
-}
-
-.project .project-container .project-img {
 padding-right: 40px;
 margin-bottom: 20px;
 }
 
+/* the header of each project container */
 .project .project-container h1 {
 text-transform: uppercase;
 font-size: 1.2em;
 }
 
+/* the text explaining each project */
 .project .project-container .project-desc {
 line-height: 3.88vh;
 padding: 0% 0%;
@@ -453,6 +470,7 @@ font-size: 1.2vw;
 
 /* Contact Me Section */
 
+/* the whole contact section and its positioning */
 #contact {
   display: flex;
   flex-direction: column;
@@ -463,6 +481,7 @@ font-size: 1.2vw;
   padding-bottom: 247px;
 }
 
+/* the header of the contact section */
 #contact-header #topic {
   text-align: center;
   font-size: 2em;
@@ -471,6 +490,7 @@ font-size: 1.2vw;
   color: #fffafa;
 }
 
+/* the line under the contact section header */
 #contact-header hr {
   background: #56c9aa;
   padding-top: 5px;
@@ -483,21 +503,21 @@ font-size: 1.2vw;
   padding-right: 20%;
   transition: all 0.3s ease 0s;
   border: #2b6455;
-
 }
 
 #contact-header hr:hover {
   background: #2b6455;
   border: #2b6455;
-
 }
 
+/* the information part of the contact section */
 #contact #contact-body {
   display: flex;
   flex-direction: column;
   padding-top: 60px;
 }
 
+/* the personal qustions of the contact section as a whole container */
 #contact #contact-body #contact-info {
   display: flex;
   flex-direction: row;
@@ -506,6 +526,7 @@ font-size: 1.2vw;
   margin: 0% 3%;
 }
 
+/* the subject and message of the container */
 #contact #contact-body #contact-text {
   display: flex;
   flex-direction: column;
@@ -516,6 +537,7 @@ font-size: 1.2vw;
   color: white;
 }
 
+/* first name, last name, and email of the user */
 #contact #contact-body #contact-info .contact-item input[type="text"] {
   background: #14171d;
   border: 2px solid #56c9aa;
@@ -533,6 +555,7 @@ font-size: 1.2vw;
   opacity: 1;
 }
 
+/* user's country */
 #contact #contact-body #contact-info .contact-item select {
   background: #14171d;
   border: 2px solid #56c9aa;
@@ -548,6 +571,7 @@ font-size: 1.2vw;
   opacity: 1;
 }
 
+/* subject of their message */
 #contact #contact-body #contact-subject input[type="text"] {
   background: #14171d;
   border: 2px solid #56c9aa;
@@ -563,6 +587,7 @@ font-size: 1.2vw;
   opacity: 1;
 }
 
+/* user's message */
 #contact #contact-body #contact-desc input[type="text"] {
   background: #14171d;
   border: 2px solid #56c9aa;
@@ -579,6 +604,7 @@ font-size: 1.2vw;
   opacity: 1;
 }
 
+/* the submit button */
 #contact #contact-body #contact-submit input[type="submit"] {
   background: #14171d;
   border: 2px solid #56c9aa;
@@ -587,7 +613,6 @@ font-size: 1.2vw;
   padding: 10px 14px;
   margin-left: 5.35%;
   transition: all 0.3s ease 0s;
-
 }
 
 #contact #contact-body #contact-submit input[type="submit"]:hover {
@@ -600,6 +625,7 @@ font-size: 1.2vw;
 
 /* Footer Section */
 
+/* footer and its positioning */
 #footer {
   display: flex;
   flex-direction: column;
@@ -609,11 +635,13 @@ font-size: 1.2vw;
   margin-top: -5.6%;
   align-items: center;
 }
-
+ 
+/* everything in the footer but the copyright */
 #footer #footer-info {
   text-align: center;
 }
 
+/* the logo of the website */
 #footer a {
   display: inline-block;
   text-decoration: none;
@@ -627,17 +655,20 @@ font-size: 1.2vw;
   color: white;
 }
 
+/* my slogan(could not think of anything better) */
 #footer #footer-info h1 {
   color: white;
   padding-bottom: 20px;
 }
 
+/* the links to all my social media */
 #footer #footer-info #socialmedia {
   display: flex;
   justify-content: space-between;
   padding-bottom: 10px;
 }
 
+/* copyright law statement */
 #footer #footer-copy {
   color: white;
   font-size: 0.8em;
