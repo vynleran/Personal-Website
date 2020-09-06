@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://img.icons8.com/color/32/000000/j-key.png">
     <title>Jahanlou</title>
 </head>
 <body>
@@ -197,22 +198,22 @@
         </div>
         
         <div id="contact-body">
-            <form>
+            <form action="contact.php" method="POST">
                 <div id="contact-info">
                     <div class="contact-item">
                         <input type="text" placeholder="First Name" required 
                         oninvalid="this.setCustomValidity('Please Enter Your First Name')"
-                        oninput="setCustomValidity('')">
+                        oninput="setCustomValidity('')" name="first-name">
                     </div>
 
                     <div class="contact-item">
                         <input type="text" placeholder="Last Name" required
                         oninvalid="this.setCustomValidity('Please Enter Your Last Name')"
-                        oninput="setCustomValidity('')">
+                        oninput="setCustomValidity('')" name="last-name">
                     </div>
 
                     <div class="contact-item">
-                        <select name="" id="">
+                        <select name="country" id="">
                             <option value="Afganistan">Afghanistan</option>
                             <option value="Albania">Albania</option>
                             <option value="Algeria">Algeria</option>
@@ -465,7 +466,7 @@
                     <div class="contact-item">
                         <input type="text" placeholder="Email Address" required
                         oninvalid="this.setCustomValidity('Please Enter Your Email Address')"
-                        oninput="setCustomValidity('')">
+                        oninput="setCustomValidity('')" name="email">
                     </div>
                 </div>
                 
@@ -473,18 +474,18 @@
                     <div id="contact-subject">
                         <input type="text" placeholder="Subject" required
                         oninvalid="this.setCustomValidity('Please a Subject')"
-                        oninput="setCustomValidity('')">
+                        oninput="setCustomValidity('')" name="subject">
                     </div>
                     
                     <div id="contact-desc">
                         <input type="text" placeholder="Your Message" required
                         oninvalid="this.setCustomValidity('Please Enter Your Message')"
-                        oninput="setCustomValidity('')">
+                        oninput="setCustomValidity('')" name="message">
                     </div>
                 </div>
                 
                 <div id="contact-submit">
-                    <input type="submit">
+                    <input type="submit" name="submit">
                 </div>
             </div>
         </form>
