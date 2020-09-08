@@ -98,7 +98,7 @@ html {
 }
 
 /* properties for the contact button */
-#contact-button {
+#login-button {
   border-radius: 100px;   /* for a rounder button */
   padding: 6px 20px;
   background-color: #56c9aa;
@@ -108,7 +108,7 @@ html {
   border: 1px solid #39b392;
 }
 
-#contact-button:hover {
+#login-button:hover {
   background-color: #2b6455;
   border: 1px solid #2b6455;
   cursor: pointer;
