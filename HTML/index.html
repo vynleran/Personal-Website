@@ -8,6 +8,7 @@
     <title>Jahanlou</title>
 </head>
 <body>
+    <script src="/JS/index.js"></script>
     <header>
         <!-- Navigation Bar -->
         <nav id="nav-bar">
@@ -16,6 +17,7 @@
                 <ul id="nav-objects">
                     <span class="nav-object-span"><a href="#about-me" class="nav-object"><li>About Me</li></a></span>
                     <span class="nav-object-span"><a href="#services" class="nav-object"><li>Services</li></a></span>
+                    <button type="button" id="day-button" onclick="dayMode()" >Day Mode</button>
                     <span class="nav-object-span"><a href="#projects" class="nav-object"><li>Projects</li></a></span>
                     <span class="nav-object-span"><a href="#contact" class="nav-object"><li>Contact Me</li></a></span>
                 </ul>
@@ -44,9 +46,9 @@
     <!-- About me Section -->
     <section>
         <div id="about-me">
-            <h1 id="topic">About Me</h1>
-            <hr>
-            <p>As a developer, I understand the importance of using my skills to help the people around me and aim to create projects that resonate 
+            <h1 id="aboutme-topic">About Me</h1>
+            <hr class="break-line">
+            <p id="aboutme-text" >As a developer, I understand the importance of using my skills to help the people around me and aim to create projects that resonate 
                 with my passions and automate individuals' boring daily tasks. 
                 Web development has been a big passion of mine as it gives you an endless possibility for creation. 
                 Currently, I am a research assistant at Louisiana Tech University, 
@@ -64,8 +66,8 @@
     <section id="services">
         
         <div id="services-header">
-            <h1 id="topic">Services</h1>
-            <hr>
+            <h1 id="services-topic">Services</h1>
+            <hr class="break-line">
         </div>
         
         <div id="services-body">
@@ -74,8 +76,8 @@
                     <h1><img src="https://img.icons8.com/nolan/96/developer.png"/></h1>
                 </div>
                 <div class="services-desc">
-                    <h1>Web Development</h1>
-                    <p>Even the most helpful websites are not going to be noticed if they are not designed properly based on the needs of the users. </p>
+                    <h1 class="servicesdesc-text">Web Development</h1>
+                    <p class="servicesdesc-text">Even the most helpful websites are not going to be noticed if they are not designed properly based on the needs of the users. </p>
                 </div>
             </div>
 
@@ -84,8 +86,8 @@
                     <h1><img src="https://img.icons8.com/nolan/96/service.png"/></h1>
                 </div>
                 <div class="services-desc">
-                    <h1>Web Maintenance</h1>
-                    <p>A website needs to be updated often in order to keep attracting new users or getting the old users to come back to it. 
+                    <h1 class="servicesdesc-text">Web Maintenance</h1>
+                    <p class="servicesdesc-text">A website needs to be updated often in order to keep attracting new users or getting the old users to come back to it. 
                         This can range from fixing a bug or just updating the smaller stuff to make a more modern website.</p>
                 </div>
             </div>
@@ -95,8 +97,8 @@
                     <h1><img src="https://img.icons8.com/nolan/96/automatic.png"/></h1>
                 </div>
                 <div class="services-desc">
-                    <h1>Automating the Boring Stuff</h1>
-                    <p>Is there a part of your day that you have to deal with that could be less tedious if only there was an app for it? 
+                    <h1 class="servicesdesc-text">Automating the Boring Stuff</h1>
+                    <p class="servicesdesc-text">Is there a part of your day that you have to deal with that could be less tedious if only there was an app for it? 
                         Maybe a financial calculator or even a chrome extension? Everything can be automated!</p>
                 </div>
             </div>
@@ -106,8 +108,8 @@
                     <h1><img src="https://img.icons8.com/nolan/96/learning.png"/></h1>
                 </div>
                 <div class="services-desc">
-                    <h1>Tutoring</h1>
-                    <p>There are many websites that can help you learn web development, 
+                    <h1 class="servicesdesc-text">Tutoring</h1>
+                    <p class="servicesdesc-text">There are many websites that can help you learn web development, 
                         but learning one on one has shown to be more effective as you will have a mentor o keep track of everything and help you at any point.</p>
                 </div>
             </div>
@@ -120,7 +122,7 @@
     <section id="projects">
         <div>
             <h1 id="project-topic">My Projects</h1>
-            <hr>
+            <hr class="break-line">
             <div class="project">
                 <div>
                     <div class="project-container">
@@ -193,8 +195,8 @@
     <!-- Contact Me Section -->
     <section id="contact">
         <div id="contact-header">
-            <h1 id="topic">Contact Me</h1>
-            <hr>
+            <h1 id="contact-topic">Contact Me</h1>
+            <hr class="break-line">
         </div>
         
         <div id="contact-body">
