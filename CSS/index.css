@@ -52,6 +52,10 @@ html {
   list-style: none;
 }
 
+#day-mode {
+  background: #14171d;
+}
+
 #nav-objects a {
   transition: all 0.3s ease 0s;
   color: #56c9aa;
@@ -72,6 +76,7 @@ html {
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
   overflow: hidden; 
+  background-blend-mode: #14171d ;
 }
 
 /* underline transition for the middle links */
@@ -95,6 +100,10 @@ html {
 .nav-object:hover:before, .nav-object:focus:before, .nav-object:active:before {
   right: 0;
   left: 0;
+}
+
+#day-mode {
+  background: #14171d;
 }
 
 /* properties for the contact button */
@@ -237,7 +246,7 @@ html {
 }
 
 /* the header of the about me section */
-#about-me #topic {
+#aboutme-topic {
   text-align: center;
   font-size: 2em;
   padding: 2%;
@@ -299,7 +308,7 @@ padding-top: 247px;
 }
 
 /* the header of the services section */
-#services-header #topic {
+#services-header #services-topic {
 text-align: center;
 font-size: 2em;
 padding: 2%;
@@ -412,7 +421,6 @@ border: #2b6455;
 
 /* all of the 4 projects container */
 .project {
-background: #14171d;
 text-align: center;
 display: flex;
 flex-wrap: wrap;
@@ -420,7 +428,6 @@ flex-wrap: wrap;
 
 /* each one of the projects */
 .project .project-container {
-background: #14171d;
 display: flex;
 flex-direction: row;
 justify-content: center;
@@ -476,7 +483,7 @@ font-size: 1.2vw;
 }
 
 /* the header of the contact section */
-#contact-header #topic {
+#contact-header #contact-topic {
   text-align: center;
   font-size: 2em;
   padding: 0% 2% 2% 2%;
@@ -533,7 +540,7 @@ font-size: 1.2vw;
 
 /* first name, last name, and email of the user */
 #contact #contact-body #contact-info .contact-item input[type="text"] {
-  background: #14171d;
+  background: rgba(30, 35, 44);
   border: 2px solid #56c9aa;
   color: white;
   width: 30vw;
@@ -543,15 +550,17 @@ font-size: 1.2vw;
   opacity: 0.6;
   transition: all 0.1s ease 0s;
   cursor: pointer;
+  color: white;
 }
 
 #contact #contact-body #contact-info .contact-item input[type="text"]:hover {
   opacity: 1;
+  background: rgba(20, 23, 29, 1);
 }
 
 /* user's country */
 #contact #contact-body #contact-info .contact-item select {
-  background: #14171d;
+  background: rgba(30, 35, 44);
   border: 2px solid #56c9aa;
   color: white;
   width: 30vw;
@@ -563,11 +572,12 @@ font-size: 1.2vw;
 
 #contact #contact-body #contact-info .contact-item select:hover {
   opacity: 1;
+  background: rgba(20, 23, 29, 1);
 }
 
 /* subject of their message */
 #contact #contact-body #contact-subject input[type="text"] {
-  background: #14171d;
+  background: rgba(30, 35, 44);
   border: 2px solid #56c9aa;
   color: white;
   width: 61.8vw;
@@ -579,11 +589,12 @@ font-size: 1.2vw;
 
 #contact #contact-body #contact-subject input[type="text"]:hover {
   opacity: 1;
+  background: rgba(20, 23, 29, 1);
 }
 
 /* user's message */
 #contact #contact-body #contact-desc input[type="text"] {
-  background: #14171d;
+  background: rgba(30, 35, 44);
   border: 2px solid #56c9aa;
   color: white;
   opacity: 0.6;
@@ -596,11 +607,12 @@ font-size: 1.2vw;
 
 #contact #contact-body #contact-desc input[type="text"]:hover {
   opacity: 1;
+  background: rgba(20, 23, 29, 1);
 }
 
 /* the submit button */
 #contact #contact-body #contact-submit input[type="submit"] {
-  background: #14171d;
+  background: rgba(30, 35, 44);
   border: 2px solid #56c9aa;
   color: #56c9aa;
   margin-left: 3.1vw;
