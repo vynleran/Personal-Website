@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/index.css">
     <link rel="icon" href="https://img.icons8.com/color/32/000000/j-key.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Jahanlou</title>
 </head>
 <body>
     <script src="/JS/index.js"></script>
     <header>
         <!-- Navigation Bar -->
-        <nav id="nav-bar">
+        <!-- <nav class="topnav" id="nav-bar" id="myTopnav">
             <a href="#" id="logo"> <span>Jahan</span>lou </a>
             <div>
                 <ul id="nav-objects">
@@ -19,10 +20,23 @@
                     <span class="nav-object-span"><a href="#services" class="nav-object"><li>Services</li></a></span>
                     <span class="nav-object-span"><a href="#projects" class="nav-object"><li>Projects</li></a></span>
                     <span class="nav-object-span"><a href="#contact" class="nav-object"><li>Contact Me</li></a></span>
+                    <a href="javascript:void(0);" class="icon" onclick="nav()">
+                        <i class="fa fa-bars"></i>
+                    </a>
                 </ul>
             </div>
             <a href="login.html" ><button id="login-button">Login</button></a>
-        </nav>
+        </nav> -->
+        <div class="topnav" id="myTopnav">
+            <a href="#" id="logo" class="active"><span>Jahan</span>lou</a>
+            <a href="#about-me" class="nav-object">About Me</a>
+            <a href="#services" class="nav-object">Services</a>
+            <a href="#projects" class="nav-object">Projects</a>
+            <a href="#contact" class="nav-object">Contact Me</a>
+            <a href="javascript:void(0);" class="icon" onclick="nav()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
         <!-- End Navigation Bar -->
         
         <!-- Hero Section -->
@@ -47,11 +61,14 @@
         <div id="about-me">
             <h1 id="aboutme-topic">About Me</h1>
             <hr class="break-line">
-            <p id="aboutme-text" >As a developer, I understand the importance of using my skills to help the people around me and aim to create projects that resonate 
-                with my passions and automate individuals' boring daily tasks. 
-                Web development has been a big passion of mine as it gives you an endless possibility for creation. 
-                Currently, I am a research assistant at Louisiana Tech University, 
-                where I am collecting data on implementing computer science concepts in educational environments.</p>
+            <p id="aboutme-text" >As a puzzle enthusiast, I look at 
+                software development 
+                as a big messy puzzle, and by figuring out the smaller 
+                and less challenging pieces; I create projects that 
+                resonate with my passions and automate individuals' 
+                boring daily tasks. In the future, 
+                I plan on gaining more knowledge about the 
+                software industry by acquiring an internship for summer 2021. Currently, I am a junior web developer at Louisiana Tech University, where I maintain our web pages on a daily basis and develop various web pages using PHP and React.js. I also work as a research assistant, where I am collecting data on implementing computer science concepts like decomposition, abstraction, algorithms and etc. in educational environments such as colleges and K-12.</p>
             <div id="socialmedia-links">
                 <a href="https://www.linkedin.com/in/parsajahanlou/" target="_blank" ><img src="https://img.icons8.com/nolan/96/linkedin.png"/></a>
                 <a href="https://github.com/vynleran" target="_blank" ><img src="https://img.icons8.com/nolan/96/github.png"/></a>
@@ -96,7 +113,7 @@
                     <h1><img src="https://img.icons8.com/nolan/96/automatic.png"/></h1>
                 </div>
                 <div class="services-desc">
-                    <h1 class="servicesdesc-text">Automating the Boring Stuff</h1>
+                    <h1 class="servicesdesc-text">Task Automation</h1>
                     <p class="servicesdesc-text">Is there a part of your day that you have to deal with that could be less tedious if only there was an app for it? 
                         Maybe a financial calculator or even a chrome extension? Everything can be automated!</p>
                 </div>
@@ -123,74 +140,74 @@
             <h1 id="project-topic">My Projects</h1>
             <hr class="break-line">
             <div class="project">
-                <div>
-                    <div class="project-container">
-                        <div class="project-image">
-                            <h2>
-                                <a href="https://github.com/vynleran/Side-Projects/tree/master/Database%20Visualizor" target="_blank" ><img src="https://img.icons8.com/nolan/96/database.png" class="project-img"></a>
-                            </h2>
-                        </div>
-                        <div class="project-desc">
-                            <h1>Database Visualizer | LAMP | MARN |</h1>
-                            <p>Currently developing a database visualizer for a battery startup using MERN stack 
-                                where they can easily pick what variables and batteries they want to compare and the program draws a 
-                                detailed graph to show the relationships between the indeoendent and dependent variables. A second version of
-                                this program is also being built using LAMP stack.
-                            </p>
-                        </div>
+            
+                <div class="project-container">
+                    <div class="project-image">
+                        <h2>
+                            <a href="https://github.com/vynleran/Side-Projects/tree/master/Database%20Visualizor" target="_blank" ><img src="https://img.icons8.com/nolan/96/database.png" class="project-img"></a>
+                        </h2>
+                    </div>
+                    <div class="project-desc">
+                        <h1>Database Visualizer | LAMP | MARN |</h1>
+                        <p>Currently developing a database visualizer for a battery startup using MERN stack 
+                            where they can easily pick what variables and batteries they want to compare and the program draws a 
+                            detailed graph to show the relationships between the indeoendent and dependent variables. A second version of
+                            this program is also being built using LAMP stack.
+                        </p>
                     </div>
                 </div>
-                
-                <div>
-                    <div class="project-container">
-                        <div class="project-image">
-                            <h2>
-                                <img src="https://img.icons8.com/nolan/96/domain.png" class="project-img" />
-                            </h2>
-                        </div>
-                        <div  class="project-desc">
-                            <h1>Personal Website | JavaScript | PHP | HTML | CSS |</h1>
-                            <p>By developing this website, I was able to grasp a better understanding of web development. 
-                                CSS can be very tedious at times because of how everything has an impact on its surroundings. 
-                                JS has been shown to be complicated but practice makes perfect.</p>
-                        </div>
+            
+            
+            
+                <div class="project-container">
+                    <div class="project-image">
+                        <h2>
+                            <img src="https://img.icons8.com/nolan/96/domain.png" class="project-img" />
+                        </h2>
+                    </div>
+                    <div  class="project-desc">
+                        <h1>Personal Website | JavaScript | PHP | HTML | CSS |</h1>
+                        <p>By developing this website, I was able to grasp a better understanding of web development. 
+                            CSS can be very tedious at times because of how everything has an impact on its surroundings. 
+                            JS has been shown to be complicated but practice makes perfect.</p>
                     </div>
                 </div>
-                
-                <div>
-                    <div class="project-container">
-                        <div class="project-image">
-                            <h2>
-                                <a href="https://github.com/vynleran/SciFiLi" target="_blank" ><img src="https://img.icons8.com/nolan/96/library.png" class="project-img"></a>
-                                
-                            </h2>
-                        </div>
-                        <div  class="project-desc">
-                            <h1>Library Management System | Java |</h1>
-                            <p>Created a library management system in Java which mainly focuses on basic operations in a library
-                                like checking in and checking out books, sorting and searching based on author and title, and the ability to
-                                evacuate books in case of a fire! Various data structures such as binary search tree, heaps, and stacks were used
-                                to maximize efficiency. 
-                            </p>
-                        </div>
+            
+            
+            
+                <div class="project-container">
+                    <div class="project-image">
+                        <h2>
+                            <a href="https://github.com/vynleran/SciFiLi" target="_blank" ><img src="https://img.icons8.com/nolan/96/library.png" class="project-img"></a>
+                            
+                        </h2>
                     </div>
-                
-                </div>
-                <div>
-                    <div class="project-container">
-                        <div class="project-image">
-                            <h2>
-                                <a href="https://github.com/vynleran/Side-Projects/blob/master/Architecture%20Calculator/Architecture%20Calculator%20Python/Architecture%20Calculator%20GUI.py" target="_blank" ><img src="https://img.icons8.com/nolan/96/calculator.png" class="project-img" /></a>
-                            </h2>
-                        </div>
-                        <div class="project-desc">
-                            <h1>Architecture Calculator | Python | TkInter |</h1>
-                            <p>Built a calculator/converter for an architect in Jacksonville
-                                 who mentiond her struggles with math and converting units. TkInter, a basic but powerful library, 
-                                 was used to help with UI/UX.</p>
-                        </div>
+                    <div  class="project-desc">
+                        <h1>Library Management System | Java |</h1>
+                        <p>Created a library management system in Java which mainly focuses on basic operations in a library
+                            like checking in and checking out books, sorting and searching based on author and title, and the ability to
+                            evacuate books in case of a fire! Various data structures such as binary search tree, heaps, and stacks were used
+                            to maximize efficiency. 
+                        </p>
                     </div>
                 </div>
+            
+            
+            
+                <div class="project-container">
+                    <div class="project-image">
+                        <h2>
+                            <a href="https://github.com/vynleran/Side-Projects/blob/master/Architecture%20Calculator/Architecture%20Calculator%20Python/Architecture%20Calculator%20GUI.py" target="_blank" ><img src="https://img.icons8.com/nolan/96/calculator.png" class="project-img" /></a>
+                        </h2>
+                    </div>
+                    <div class="project-desc">
+                        <h1>Architecture Calculator | Python | TkInter |</h1>
+                        <p>Built a calculator/converter for an architect in Jacksonville
+                                who mentiond her struggles with math and converting units. TkInter, a basic but powerful library, 
+                                was used to help with UI/UX.</p>
+                    </div>
+                </div>
+            
             </div>
         </div>
     </section>
