@@ -29,7 +29,7 @@ body{
   text-decoration: none;
   color: rgb(86,201,170);
   font-size: 24px;
-  font-family: sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 #logo span {
@@ -67,7 +67,8 @@ body{
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 24px;
+  font-family: 'Oswald', sans-serif;
 }
 
 .topnav a.active {
@@ -75,7 +76,7 @@ body{
   text-decoration: none;
   color: rgb(86,201,170);
   font-size: 24px;
-  font-family: sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 .topnav .icon {
@@ -131,6 +132,8 @@ body{
   position: relative;
   overflow: hidden; 
   background-blend-mode: #14171d ;
+  font-size: 1.3rem;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* underline transition for the middle links */
@@ -186,7 +189,7 @@ body{
   margin-top: 0px;
   padding: 247px 10%;
   background: #14171d;
-  font-family: sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 /* Parsa phrase and its positioning */
@@ -302,10 +305,11 @@ body{
 /* the header of the about me section */
 #aboutme-topic {
   text-align: center;
-  font-size: 2em;
+  font-size: 2.5rem;
   padding: 2%;
   line-height: 1.6em;
   color: #fffafa;   /* snow */
+  font-family: 'Oswald', sans-serif;
 }
 
 /* the line under the header */
@@ -335,8 +339,9 @@ body{
   height: 100%;
   width: 100%;
   line-height: 1.6em;
-  font-size: 100%;
+  font-size: 1.3rem;
   color: #fffafa; 
+  font-family: 'Roboto', sans-serif;
 }
 
 /* the social media links and thier positioning */
@@ -347,13 +352,18 @@ body{
   width: 100%;
 }
 
-@media (max-width: 800px) {
+/* Responsiveness for screens smaller than 500px */
+@media (max-width: 500px) {
   #about-me p{
     text-align: left;
+    font-size: 0.85rem;
   }
   #socialmedia-links{
-    justify-content: flex-end;
+    justify-content: left;
     width: 105%;
+  }
+  #aboutme-topic{
+    font-size: 2rem;
   }
 }
 
@@ -376,10 +386,11 @@ width: 100%;
 /* the header of the services section */
 #services-header #services-topic {
 text-align: center;
-font-size: 2em;
+font-size: 2.5rem;
 padding: 2%;
 line-height: 1.6em;
 color: #fffafa;
+font-family: 'Oswald', sans-serif;
 }
 
 /* the line under the services header */
@@ -407,12 +418,6 @@ color: white;
 margin-bottom: -10%;
 }
 
-@media (max-width: 800px) {
-  #services-body{
-    flex-direction: column;
-  }
-}
-
 /* each one of the services */
 .services-object {
 display: flex;
@@ -425,6 +430,12 @@ justify-content: space-between;
 /* the description of each service */
 #services-body .services-object .services-desc {
 width: 150%;
+text-align: center;
+word-spacing: 0.2em;
+height: 100%;
+line-height: 1.6em;
+font-size: 1.3em;
+color: #fffafa; 
 }
 
 /* the icon of each service */
@@ -436,19 +447,61 @@ margin-left: -5%;
 /* the header of the each service description */
 #services-body .services-object .services-desc h1 {
 text-transform: uppercase;
-font-size: 1.2em;
+font-size: 1.5rem;
 width: max-content;
+font-family: 'Oswald', sans-serif;
 }
 
 /* the text explaining each service */
 #services-body .services-object .services-desc p {
-line-height: 3.88vh;
-padding: 0% 0%;
 display: flex;
 flex-direction: column;
 text-align: left;
 order: 2;
-font-size: 1.2vw;
+word-spacing: 0.2em;
+height: 100%;
+width: 100%;
+line-height: 1.6em;
+font-size: 1.3rem;
+color: #fffafa; 
+font-family: 'Roboto', sans-serif;
+}
+
+/* Responsiveness for screens smaller than 1070px */
+@media (max-width: 1070px) {
+  #services-body{
+    flex-direction: column;
+  }
+  #services-body .services-object .services-desc p{
+    width: 200%;
+  }
+}
+
+/* Responsiveness for screens smaller than 850px */
+@media (max-width: 850px) {
+  #services-body{
+    flex-direction: column;
+  }
+  #services-body .services-object .services-desc p{
+    width: 100%;
+  }
+}
+
+/* Responsiveness for screens smaller than 500px */
+@media (max-width: 500px) {
+  #services-body{
+    flex-direction: column;
+  }
+  #services-body .services-object .services-desc h1{
+    font-size: 0.95rem;
+  }
+  #services-body .services-object .services-desc p{
+    width: 100%;
+    font-size: 0.85rem;
+  }
+  #services-header #services-topic{
+    font-size: 2rem;
+  }
 }
 
 /* End Services Section */
@@ -467,8 +520,12 @@ font-size: 1.2vw;
 
 /* the header of the project section */
 #project-topic {
-font-size: 2em;
-text-align: center;
+  text-align: center;
+  font-size: 2.5rem;
+  line-height: 1.6em;
+  margin-bottom: -1%;
+  color: #fffafa;   /* snow */
+  font-family: 'Oswald', sans-serif;
 }
 
 /* the line under the header of the project section */
@@ -523,13 +580,13 @@ margin-bottom: 20px;
 /* the header of each project container */
 .project .project-container h1 {
 text-transform: uppercase;
-font-size: 1.2em;
+font-size: 1.5rem;
 width: 100%;
+font-family: 'Oswald', sans-serif;
 }
 
 /* the text explaining each project */
 .project .project-container .project-desc {
-line-height: 3.88vh;
 padding: 0% 0%;
 display: flex;
 flex-direction: column;
@@ -537,7 +594,24 @@ height: 50%;
 width: 80%;
 text-align: left;
 order: 2;
-font-size: 1.2vw;
+word-spacing: 0.2em;
+line-height: 1.6em;
+font-size: 1.3rem;
+color: #fffafa;
+font-family: 'Roboto', sans-serif; 
+}
+
+/* Responsiveness for screens smaller than 500px */
+@media (max-width: 500px) {
+  .project .project-container h1{
+    font-size: 0.95rem;
+  }
+  .project .project-container .project-desc{
+    font-size: 0.85rem;
+  }
+  #services-header #services-topic{
+    font-size: 2rem;
+  }
 }
 
 /* End Project Section */
@@ -550,7 +624,7 @@ font-size: 1.2vw;
   flex-direction: column;
   background: #14171d;
   padding: 5% 15%;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin-top: -5.6%;
   padding-bottom: 247px;
 }
@@ -558,10 +632,11 @@ font-size: 1.2vw;
 /* the header of the contact section */
 #contact-header #contact-topic {
   text-align: center;
-  font-size: 2em;
-  padding: 0% 2% 2% 2%;
+  font-size: 2.5rem;
+  padding: 2%;
   line-height: 1.6em;
-  color: #fffafa;
+  color: #fffafa;   /* snow */
+  font-family: 'Oswald', sans-serif;
 }
 
 /* the line under the contact section header */
@@ -588,7 +663,7 @@ font-size: 1.2vw;
 #contact #contact-body {
   display: flex;
   flex-direction: column;
-  padding-top: 60px;
+  padding-top: 0px;
 }
 
 /* the personal qustions of the contact section as a whole container */
@@ -601,6 +676,12 @@ font-size: 1.2vw;
 }
 
 /* the subject and message of the container */
+#contact #contact-body #contact-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #contact #contact-body #contact-text {
   display: flex;
   flex-direction: column;
@@ -624,6 +705,7 @@ font-size: 1.2vw;
   transition: all 0.1s ease 0s;
   cursor: pointer;
   color: white;
+  font-family: 'Roboto', sans-serif;
 }
 
 #contact #contact-body #contact-info .contact-item input[type="text"]:hover {
@@ -640,7 +722,7 @@ font-size: 1.2vw;
   padding: 10px;
   opacity: 0.6;
   transition: all 0.1s ease 0s;
-  
+  font-family: 'Roboto', sans-serif;
 }
 
 #contact #contact-body #contact-info .contact-item select:hover {
@@ -658,6 +740,7 @@ font-size: 1.2vw;
   padding-left: 14px;
   opacity: 0.6;
   transition: all 0.1s ease 0s;
+  font-family: 'Roboto', sans-serif;
 }
 
 #contact #contact-body #contact-subject input[type="text"]:hover {
@@ -676,6 +759,7 @@ font-size: 1.2vw;
   padding-left: 14px;
   margin: 25px 0px;
   transition: all 0.1s ease 0s;
+  font-family: 'Roboto', sans-serif;
 }
 
 #contact #contact-body #contact-desc input[type="text"]:hover {
@@ -690,14 +774,22 @@ font-size: 1.2vw;
   color: #56c9aa;
   margin-left: 3.1vw;
   padding: 10px 14px;
-  margin-left: 5.35%;
+  margin-left: 6%;
   transition: all 0.3s ease 0s;
+  font-family: 'Roboto', sans-serif;
 }
 
 #contact #contact-body #contact-submit input[type="submit"]:hover {
   background: #2b6455;
   color: #ffffe3;
   border: 2px solid white;
+}
+
+/* Responsiveness for screens smaller than 500px */
+@media (max-width: 500px) {
+  #contact-header #contact-topic{
+    font-size: 2rem;
+  }
 }
 
 /* End Contact Section */
@@ -728,6 +820,7 @@ font-size: 1.2vw;
   font-size: 48px;
   font-family: sans-serif;
   padding-bottom: 20px;
+  font-family: 'Oswald', sans-serif;
 }
 
 #footer span {
@@ -738,6 +831,7 @@ font-size: 1.2vw;
 #footer #footer-info h1 {
   color: white;
   padding-bottom: 20px;
+  font-family: 'Oswald', sans-serif;
 }
 
 /* the links to all my social media */
@@ -751,6 +845,18 @@ font-size: 1.2vw;
 #footer #footer-copy {
   color: white;
   font-size: 0.8em;
+}
+
+/* Responsiveness for screens smaller than 500px */
+@media (max-width: 500px) {
+  #footer #footer-info h1 {
+    color: white;
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+  }
+  #footer #footer-copy{
+    text-align: center;
+  }
 }
 
 /* End Footer Section */
